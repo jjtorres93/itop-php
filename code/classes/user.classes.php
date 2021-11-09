@@ -96,6 +96,7 @@ class User extends Dbh{
     }
 
     protected function createRecord($user_id, $table){
+        /* The query on this method does not work, I still don't know why because the query works fine on the database. */
         $stmt = $this->connect()->prepare('INSERT INTO records(user_id, table) VALUES (?, ?)');
         if(!$stmt->execute([$user_id, $table])){
             $stmt = null;

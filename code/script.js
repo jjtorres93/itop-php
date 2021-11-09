@@ -18,3 +18,5 @@ function show(){
     buttonShowOrHide.addEventListener("click", hide())    
     
 }
+
+//Have to work on the functions, it bugs after two uses.
